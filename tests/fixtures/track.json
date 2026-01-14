@@ -1,0 +1,69 @@
+[{
+    "request": {
+        "method": "POST",
+        "url": "http:\/\/172.26.0.1:18098\/mockColissimoServiceWSServiceSoapBinding",
+        "headers": {
+            "Host": "172.26.0.1:18098",
+            "Expect": "",
+            "Accept-Encoding": "",
+            "User-Agent": "GuzzleHttp\/7",
+            "SOAPAction": "\"\"",
+            "Content-Type": "text\/xml; charset=\"utf-8\"",
+            "Accept": ""
+        },
+        "body": "<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http:\/\/schemas.xmlsoap.org\/soap\/envelope\/\"><SOAP-ENV:Body xmlns:SOAP-ENV=\"http:\/\/schemas.xmlsoap.org\/soap\/envelope\/\"><tns:track xmlns:tns=\"http:\/\/chargeur.tracking.geopost.com\/\"><accountNumber>321<\/accountNumber><password>str0ngp455w0rd<\/password><skybillNumber>6A04970730936<\/skybillNumber><\/tns:track><\/SOAP-ENV:Body><\/SOAP-ENV:Envelope>\n"
+    },
+    "response": {
+        "status": {
+            "code": 200,
+            "message": "OK"
+        },
+        "headers": {
+            "Content-Type": "text\/xml; charset=utf-8",
+            "Content-Length": "1036",
+            "Server": "Jetty(6.1.26)"
+        },
+        "body": "<soapenv:Envelope xmlns:soapenv=\"http:\/\/schemas.xmlsoap.org\/soap\/envelope\/\" xmlns:char=\"http:\/\/chargeur.tracking.geopost.com\/\">\n   <soapenv:Header\/>\n   <soapenv:Body>\n      <char:trackResponse>\n         <!--Optional:-->\n         <return>\n            <errorCode>0<\/errorCode>\n            <!--Optional:-->\n            <errorMessage>?<\/errorMessage>\n            <!--Optional:-->\n            <eventCode>?<\/eventCode>\n            <!--Optional:-->\n            <eventDate>2026-01-13 18:12:00<\/eventDate>\n            <!--Optional:-->\n            <eventLibelle>?<\/eventLibelle>\n            <!--Optional:-->\n            <eventSite>?<\/eventSite>\n            <!--Optional:-->\n            <recipientCity>?<\/recipientCity>\n            <!--Optional:-->\n            <recipientCountryCode>?<\/recipientCountryCode>\n            <!--Optional:-->\n            <recipientZipCode>?<\/recipientZipCode>\n            <!--Optional:-->\n            <skybillNumber>?<\/skybillNumber>\n         <\/return>\n      <\/char:trackResponse>\n   <\/soapenv:Body>\n<\/soapenv:Envelope>",
+        "curl_info": {
+            "url": "http:\/\/172.26.0.1:18098\/mockColissimoServiceWSServiceSoapBinding",
+            "content_type": "text\/xml; charset=utf-8",
+            "http_code": 200,
+            "header_size": 103,
+            "request_size": 562,
+            "filetime": -1,
+            "ssl_verify_result": 0,
+            "redirect_count": 0,
+            "total_time": 0.022726,
+            "namelookup_time": 5.1e-5,
+            "connect_time": 0.000489,
+            "pretransfer_time": 0.000528,
+            "size_upload": 375,
+            "size_download": 1036,
+            "speed_download": 45586,
+            "speed_upload": 16500,
+            "download_content_length": 1036,
+            "upload_content_length": 375,
+            "starttransfer_time": 0.021703,
+            "redirect_time": 0,
+            "redirect_url": "",
+            "primary_ip": "172.26.0.1",
+            "certinfo": [],
+            "primary_port": 18098,
+            "local_ip": "172.26.8.159",
+            "local_port": 60556,
+            "http_version": 2,
+            "protocol": 1,
+            "ssl_verifyresult": 0,
+            "scheme": "HTTP",
+            "appconnect_time_us": 0,
+            "connect_time_us": 489,
+            "namelookup_time_us": 51,
+            "pretransfer_time_us": 528,
+            "redirect_time_us": 0,
+            "starttransfer_time_us": 21703,
+            "total_time_us": 22726,
+            "effective_method": "POST"
+        }
+    },
+    "index": 0
+}]
