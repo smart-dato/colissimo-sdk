@@ -6,22 +6,22 @@ use Phpro\SoapClient\Type\RequestInterface;
 
 class PlanPickup implements RequestInterface
 {
-    private ?\SmartDato\ColissimoSdk\Type\PlanPickupRequest $planPickupRequest = null;
+    private ?PlanPickupRequest $planPickupRequest = null;
 
     /**
      * Constructor
      */
-    public function __construct(?\SmartDato\ColissimoSdk\Type\PlanPickupRequest $planPickupRequest)
+    public function __construct(?PlanPickupRequest $planPickupRequest)
     {
         $this->planPickupRequest = $planPickupRequest;
     }
 
-    public function getPlanPickupRequest(): ?\SmartDato\ColissimoSdk\Type\PlanPickupRequest
+    public function getPlanPickupRequest(): ?PlanPickupRequest
     {
         return $this->planPickupRequest;
     }
 
-    public function withPlanPickupRequest(?\SmartDato\ColissimoSdk\Type\PlanPickupRequest $planPickupRequest): static
+    public function withPlanPickupRequest(?PlanPickupRequest $planPickupRequest): static
     {
         $new = clone $this;
         $new->planPickupRequest = $planPickupRequest;

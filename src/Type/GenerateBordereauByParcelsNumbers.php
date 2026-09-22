@@ -10,14 +10,14 @@ class GenerateBordereauByParcelsNumbers implements RequestInterface
 
     private ?string $password = null;
 
-    private \SmartDato\ColissimoSdk\Type\GenerateBordereauByParcelsNumbersGenerateBordereauParcelNumberList $generateBordereauParcelNumberList;
+    private GenerateBordereauByParcelsNumbersGenerateBordereauParcelNumberList $generateBordereauParcelNumberList;
 
-    private ?\SmartDato\ColissimoSdk\Type\TypeFields $fields = null;
+    private ?TypeFields $fields = null;
 
     /**
      * Constructor
      */
-    public function __construct(?string $contractNumber, ?string $password, \SmartDato\ColissimoSdk\Type\GenerateBordereauByParcelsNumbersGenerateBordereauParcelNumberList $generateBordereauParcelNumberList, ?\SmartDato\ColissimoSdk\Type\TypeFields $fields)
+    public function __construct(?string $contractNumber, ?string $password, GenerateBordereauByParcelsNumbersGenerateBordereauParcelNumberList $generateBordereauParcelNumberList, ?TypeFields $fields)
     {
         $this->contractNumber = $contractNumber;
         $this->password = $password;
@@ -51,12 +51,12 @@ class GenerateBordereauByParcelsNumbers implements RequestInterface
         return $new;
     }
 
-    public function getGenerateBordereauParcelNumberList(): \SmartDato\ColissimoSdk\Type\GenerateBordereauByParcelsNumbersGenerateBordereauParcelNumberList
+    public function getGenerateBordereauParcelNumberList(): GenerateBordereauByParcelsNumbersGenerateBordereauParcelNumberList
     {
         return $this->generateBordereauParcelNumberList;
     }
 
-    public function withGenerateBordereauParcelNumberList(\SmartDato\ColissimoSdk\Type\GenerateBordereauByParcelsNumbersGenerateBordereauParcelNumberList $generateBordereauParcelNumberList): static
+    public function withGenerateBordereauParcelNumberList(GenerateBordereauByParcelsNumbersGenerateBordereauParcelNumberList $generateBordereauParcelNumberList): static
     {
         $new = clone $this;
         $new->generateBordereauParcelNumberList = $generateBordereauParcelNumberList;
@@ -64,12 +64,12 @@ class GenerateBordereauByParcelsNumbers implements RequestInterface
         return $new;
     }
 
-    public function getFields(): ?\SmartDato\ColissimoSdk\Type\TypeFields
+    public function getFields(): ?TypeFields
     {
         return $this->fields;
     }
 
-    public function withFields(?\SmartDato\ColissimoSdk\Type\TypeFields $fields): static
+    public function withFields(?TypeFields $fields): static
     {
         $new = clone $this;
         $new->fields = $fields;

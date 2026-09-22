@@ -6,7 +6,7 @@ class XmlResponseSender
 {
     private ?string $senderParcelRef = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\TypeAdresse $address = null;
+    private ?TypeAdresse $address = null;
 
     public function getSenderParcelRef(): ?string
     {
@@ -21,12 +21,12 @@ class XmlResponseSender
         return $new;
     }
 
-    public function getAddress(): ?\SmartDato\ColissimoSdk\Type\TypeAdresse
+    public function getAddress(): ?TypeAdresse
     {
         return $this->address;
     }
 
-    public function withAddress(?\SmartDato\ColissimoSdk\Type\TypeAdresse $address): static
+    public function withAddress(?TypeAdresse $address): static
     {
         $new = clone $this;
         $new->address = $address;

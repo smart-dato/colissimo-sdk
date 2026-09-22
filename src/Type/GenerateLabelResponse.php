@@ -6,14 +6,14 @@ use Phpro\SoapClient\Type\ResultInterface;
 
 class GenerateLabelResponse implements ResultInterface
 {
-    private ?\SmartDato\ColissimoSdk\Type\GenerateLabelV2ResponseType $return = null;
+    private ?GenerateLabelV2ResponseType $return = null;
 
-    public function getReturn(): ?\SmartDato\ColissimoSdk\Type\GenerateLabelV2ResponseType
+    public function getReturn(): ?GenerateLabelV2ResponseType
     {
         return $this->return;
     }
 
-    public function withReturn(?\SmartDato\ColissimoSdk\Type\GenerateLabelV2ResponseType $return): static
+    public function withReturn(?GenerateLabelV2ResponseType $return): static
     {
         $new = clone $this;
         $new->return = $return;

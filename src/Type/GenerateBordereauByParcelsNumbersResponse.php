@@ -6,14 +6,14 @@ use Phpro\SoapClient\Type\ResultInterface;
 
 class GenerateBordereauByParcelsNumbersResponse implements ResultInterface
 {
-    private ?\SmartDato\ColissimoSdk\Type\BordereauResponse $return = null;
+    private ?BordereauResponse $return = null;
 
-    public function getReturn(): ?\SmartDato\ColissimoSdk\Type\BordereauResponse
+    public function getReturn(): ?BordereauResponse
     {
         return $this->return;
     }
 
-    public function withReturn(?\SmartDato\ColissimoSdk\Type\BordereauResponse $return): static
+    public function withReturn(?BordereauResponse $return): static
     {
         $new = clone $this;
         $new->return = $return;

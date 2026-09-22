@@ -8,9 +8,9 @@ class GenerateCN23ServiceArg1
 
     private ?string $password = null;
 
-    private \SmartDato\ColissimoSdk\Type\TypeLetter $letter;
+    private TypeLetter $letter;
 
-    private ?\SmartDato\ColissimoSdk\Type\TypeFields $fields = null;
+    private ?TypeFields $fields = null;
 
     public function getContractNumber(): ?string
     {
@@ -38,12 +38,12 @@ class GenerateCN23ServiceArg1
         return $new;
     }
 
-    public function getLetter(): \SmartDato\ColissimoSdk\Type\TypeLetter
+    public function getLetter(): TypeLetter
     {
         return $this->letter;
     }
 
-    public function withLetter(\SmartDato\ColissimoSdk\Type\TypeLetter $letter): static
+    public function withLetter(TypeLetter $letter): static
     {
         $new = clone $this;
         $new->letter = $letter;
@@ -51,12 +51,12 @@ class GenerateCN23ServiceArg1
         return $new;
     }
 
-    public function getFields(): ?\SmartDato\ColissimoSdk\Type\TypeFields
+    public function getFields(): ?TypeFields
     {
         return $this->fields;
     }
 
-    public function withFields(?\SmartDato\ColissimoSdk\Type\TypeFields $fields): static
+    public function withFields(?TypeFields $fields): static
     {
         $new = clone $this;
         $new->fields = $fields;

@@ -4,14 +4,14 @@ namespace SmartDato\ColissimoSdk\Type;
 
 class XmlV2Response extends XmlResponse
 {
-    private ?\SmartDato\ColissimoSdk\Type\TypeFields $fields = null;
+    private ?TypeFields $fields = null;
 
-    public function getFields(): ?\SmartDato\ColissimoSdk\Type\TypeFields
+    public function getFields(): ?TypeFields
     {
         return $this->fields;
     }
 
-    public function withFields(?\SmartDato\ColissimoSdk\Type\TypeFields $fields): static
+    public function withFields(?TypeFields $fields): static
     {
         $new = clone $this;
         $new->fields = $fields;

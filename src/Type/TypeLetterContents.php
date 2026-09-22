@@ -5,21 +5,21 @@ namespace SmartDato\ColissimoSdk\Type;
 class TypeLetterContents
 {
     /**
-     * @var null | array<int<0,max>, \SmartDato\ColissimoSdk\Type\TypeLetterArticle>
+     * @var null | array<int<0,max>, TypeLetterArticle>
      */
     private ?array $article = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\TypeLetterCategory $category = null;
+    private ?TypeLetterCategory $category = null;
 
     /**
-     * @var null | array<int<0,max>, \SmartDato\ColissimoSdk\Type\TypeLetterOriginal>
+     * @var null | array<int<0,max>, TypeLetterOriginal>
      */
     private ?array $original = null;
 
     private ?string $explanations = null;
 
     /**
-     * @return null | array<int<0,max>, \SmartDato\ColissimoSdk\Type\TypeLetterArticle>
+     * @return null | array<int<0,max>, TypeLetterArticle>
      */
     public function getArticle(): ?array
     {
@@ -27,7 +27,7 @@ class TypeLetterContents
     }
 
     /**
-     * @param  null | array<int<0,max>, \SmartDato\ColissimoSdk\Type\TypeLetterArticle>  $article
+     * @param  null | array<int<0,max>, TypeLetterArticle>  $article
      */
     public function withArticle(?array $article): static
     {
@@ -37,12 +37,12 @@ class TypeLetterContents
         return $new;
     }
 
-    public function getCategory(): ?\SmartDato\ColissimoSdk\Type\TypeLetterCategory
+    public function getCategory(): ?TypeLetterCategory
     {
         return $this->category;
     }
 
-    public function withCategory(?\SmartDato\ColissimoSdk\Type\TypeLetterCategory $category): static
+    public function withCategory(?TypeLetterCategory $category): static
     {
         $new = clone $this;
         $new->category = $category;
@@ -51,7 +51,7 @@ class TypeLetterContents
     }
 
     /**
-     * @return null | array<int<0,max>, \SmartDato\ColissimoSdk\Type\TypeLetterOriginal>
+     * @return null | array<int<0,max>, TypeLetterOriginal>
      */
     public function getOriginal(): ?array
     {
@@ -59,7 +59,7 @@ class TypeLetterContents
     }
 
     /**
-     * @param  null | array<int<0,max>, \SmartDato\ColissimoSdk\Type\TypeLetterOriginal>  $original
+     * @param  null | array<int<0,max>, TypeLetterOriginal>  $original
      */
     public function withOriginal(?array $original): static
     {
