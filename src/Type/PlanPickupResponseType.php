@@ -2,4 +2,6 @@
 
 namespace SmartDato\ColissimoSdk\Type;
 
-class PlanPickupResponseType extends BaseResponse {}
+class PlanPickupResponseType extends BaseResponse
+{
+}
