@@ -2,6 +2,10 @@
 
 namespace SmartDato\ColissimoSdk;
 
+use Phpro\SoapClient\Exception\SoapException;
+use Phpro\SoapClient\Type\RequestInterface;
+use Phpro\SoapClient\Type\ResultInterface;
+
 /**
  * Proxy wraper on WSDL clients
  */
