@@ -6,14 +6,14 @@ use Phpro\SoapClient\Type\ResultInterface;
 
 class TrackResponse implements ResultInterface
 {
-    private ?\SmartDato\ColissimoSdk\Type\SkybillInformationResult $return = null;
+    private ?SkybillInformationResult $return = null;
 
-    public function getReturn(): ?\SmartDato\ColissimoSdk\Type\SkybillInformationResult
+    public function getReturn(): ?SkybillInformationResult
     {
         return $this->return;
     }
 
-    public function withReturn(?\SmartDato\ColissimoSdk\Type\SkybillInformationResult $return): static
+    public function withReturn(?SkybillInformationResult $return): static
     {
         $new = clone $this;
         $new->return = $return;

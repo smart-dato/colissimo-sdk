@@ -8,12 +8,12 @@ class GenerateLabelService implements RequestInterface
 {
     private ?string $arg0 = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\GenerateLabelServiceArg1 $arg1 = null;
+    private ?GenerateLabelServiceArg1 $arg1 = null;
 
     /**
      * Constructor
      */
-    public function __construct(?string $arg0, ?\SmartDato\ColissimoSdk\Type\GenerateLabelServiceArg1 $arg1)
+    public function __construct(?string $arg0, ?GenerateLabelServiceArg1 $arg1)
     {
         $this->arg0 = $arg0;
         $this->arg1 = $arg1;
@@ -32,12 +32,12 @@ class GenerateLabelService implements RequestInterface
         return $new;
     }
 
-    public function getArg1(): ?\SmartDato\ColissimoSdk\Type\GenerateLabelServiceArg1
+    public function getArg1(): ?GenerateLabelServiceArg1
     {
         return $this->arg1;
     }
 
-    public function withArg1(?\SmartDato\ColissimoSdk\Type\GenerateLabelServiceArg1 $arg1): static
+    public function withArg1(?GenerateLabelServiceArg1 $arg1): static
     {
         $new = clone $this;
         $new->arg1 = $arg1;

@@ -7,7 +7,7 @@ use Soap\Encoding\ClassMap\ClassMapCollection;
 
 class ColissimoShipmentClassmap
 {
-    public static function types(): \Soap\Encoding\ClassMap\ClassMapCollection
+    public static function types(): ClassMapCollection
     {
         return new ClassMapCollection(
             new ClassMap('http://sls.ws.coliposte.fr', 'getLabel', Type\GetLabel::class),
@@ -109,7 +109,7 @@ class ColissimoShipmentClassmap
         );
     }
 
-    public static function enums(): \Soap\Encoding\ClassMap\ClassMapCollection
+    public static function enums(): ClassMapCollection
     {
         return new ClassMapCollection;
     }

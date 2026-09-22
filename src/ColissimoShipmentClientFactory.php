@@ -17,7 +17,7 @@ class ColissimoShipmentClientFactory
      *
      * @param  non-empty-string  $wsdl
      */
-    public static function factory(string $wsdl): \SmartDato\ColissimoSdk\ColissimoShipmentClient
+    public static function factory(string $wsdl): ColissimoShipmentClient
     {
         $engine = DefaultEngineFactory::create(
             EngineOptions::defaults($wsdl)

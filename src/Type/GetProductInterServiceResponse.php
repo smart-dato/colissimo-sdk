@@ -6,14 +6,14 @@ use Phpro\SoapClient\Type\ResultInterface;
 
 class GetProductInterServiceResponse implements ResultInterface
 {
-    private ?\SmartDato\ColissimoSdk\Type\GetProductInterResponseType $return = null;
+    private ?GetProductInterResponseType $return = null;
 
-    public function getReturn(): ?\SmartDato\ColissimoSdk\Type\GetProductInterResponseType
+    public function getReturn(): ?GetProductInterResponseType
     {
         return $this->return;
     }
 
-    public function withReturn(?\SmartDato\ColissimoSdk\Type\GetProductInterResponseType $return): static
+    public function withReturn(?GetProductInterResponseType $return): static
     {
         $new = clone $this;
         $new->return = $return;

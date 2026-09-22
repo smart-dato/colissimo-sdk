@@ -6,22 +6,22 @@ use Phpro\SoapClient\Type\RequestInterface;
 
 class GetLabel implements RequestInterface
 {
-    private ?\SmartDato\ColissimoSdk\Type\GetLabelRequest $getLabelRequest = null;
+    private ?GetLabelRequest $getLabelRequest = null;
 
     /**
      * Constructor
      */
-    public function __construct(?\SmartDato\ColissimoSdk\Type\GetLabelRequest $getLabelRequest)
+    public function __construct(?GetLabelRequest $getLabelRequest)
     {
         $this->getLabelRequest = $getLabelRequest;
     }
 
-    public function getGetLabelRequest(): ?\SmartDato\ColissimoSdk\Type\GetLabelRequest
+    public function getGetLabelRequest(): ?GetLabelRequest
     {
         return $this->getLabelRequest;
     }
 
-    public function withGetLabelRequest(?\SmartDato\ColissimoSdk\Type\GetLabelRequest $getLabelRequest): static
+    public function withGetLabelRequest(?GetLabelRequest $getLabelRequest): static
     {
         $new = clone $this;
         $new->getLabelRequest = $getLabelRequest;

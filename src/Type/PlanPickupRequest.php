@@ -12,7 +12,7 @@ class PlanPickupRequest
 
     private ?\DateTimeInterface $mailBoxPickingDate = null;
 
-    private \SmartDato\ColissimoSdk\Type\TypePlanPickupSender $sender;
+    private TypePlanPickupSender $sender;
 
     public function getContractNumber(): ?string
     {
@@ -66,12 +66,12 @@ class PlanPickupRequest
         return $new;
     }
 
-    public function getSender(): \SmartDato\ColissimoSdk\Type\TypePlanPickupSender
+    public function getSender(): TypePlanPickupSender
     {
         return $this->sender;
     }
 
-    public function withSender(\SmartDato\ColissimoSdk\Type\TypePlanPickupSender $sender): static
+    public function withSender(TypePlanPickupSender $sender): static
     {
         $new = clone $this;
         $new->sender = $sender;

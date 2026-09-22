@@ -2,6 +2,4 @@
 
 namespace SmartDato\ColissimoSdk\Type;
 
-class CheckGenerateLabelResponseType extends BaseResponse
-{
-}
+class CheckGenerateLabelResponseType extends BaseResponse {}

@@ -8,12 +8,12 @@ class GetListMailBoxPickingDatesService implements RequestInterface
 {
     private ?string $arg0 = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\GetListMailBoxPickingDatesRetourRequest $arg1 = null;
+    private ?GetListMailBoxPickingDatesRetourRequest $arg1 = null;
 
     /**
      * Constructor
      */
-    public function __construct(?string $arg0, ?\SmartDato\ColissimoSdk\Type\GetListMailBoxPickingDatesRetourRequest $arg1)
+    public function __construct(?string $arg0, ?GetListMailBoxPickingDatesRetourRequest $arg1)
     {
         $this->arg0 = $arg0;
         $this->arg1 = $arg1;
@@ -32,12 +32,12 @@ class GetListMailBoxPickingDatesService implements RequestInterface
         return $new;
     }
 
-    public function getArg1(): ?\SmartDato\ColissimoSdk\Type\GetListMailBoxPickingDatesRetourRequest
+    public function getArg1(): ?GetListMailBoxPickingDatesRetourRequest
     {
         return $this->arg1;
     }
 
-    public function withArg1(?\SmartDato\ColissimoSdk\Type\GetListMailBoxPickingDatesRetourRequest $arg1): static
+    public function withArg1(?GetListMailBoxPickingDatesRetourRequest $arg1): static
     {
         $new = clone $this;
         $new->arg1 = $arg1;

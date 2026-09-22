@@ -4,18 +4,18 @@ namespace SmartDato\ColissimoSdk\Type;
 
 class Site
 {
-    private ?\SmartDato\ColissimoSdk\Type\AddressPCH $address = null;
+    private ?AddressPCH $address = null;
 
     private ?string $code = null;
 
     private ?string $name = null;
 
-    public function getAddress(): ?\SmartDato\ColissimoSdk\Type\AddressPCH
+    public function getAddress(): ?AddressPCH
     {
         return $this->address;
     }
 
-    public function withAddress(?\SmartDato\ColissimoSdk\Type\AddressPCH $address): static
+    public function withAddress(?AddressPCH $address): static
     {
         $new = clone $this;
         $new->address = $address;

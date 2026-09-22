@@ -8,7 +8,7 @@ class GetListMailBoxPickingDatesRetourRequest
 
     private ?string $password = null;
 
-    private \SmartDato\ColissimoSdk\Type\GetListMailBoxPickingDatesRetourRequestSender $sender;
+    private GetListMailBoxPickingDatesRetourRequestSender $sender;
 
     public function getContractNumber(): ?string
     {
@@ -36,12 +36,12 @@ class GetListMailBoxPickingDatesRetourRequest
         return $new;
     }
 
-    public function getSender(): \SmartDato\ColissimoSdk\Type\GetListMailBoxPickingDatesRetourRequestSender
+    public function getSender(): GetListMailBoxPickingDatesRetourRequestSender
     {
         return $this->sender;
     }
 
-    public function withSender(\SmartDato\ColissimoSdk\Type\GetListMailBoxPickingDatesRetourRequestSender $sender): static
+    public function withSender(GetListMailBoxPickingDatesRetourRequestSender $sender): static
     {
         $new = clone $this;
         $new->sender = $sender;

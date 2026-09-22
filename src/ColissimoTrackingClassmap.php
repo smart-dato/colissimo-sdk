@@ -7,7 +7,7 @@ use Soap\Encoding\ClassMap\ClassMapCollection;
 
 class ColissimoTrackingClassmap
 {
-    public static function types(): \Soap\Encoding\ClassMap\ClassMapCollection
+    public static function types(): ClassMapCollection
     {
         return new ClassMapCollection(
             new ClassMap('http://chargeur.tracking.geopost.com/', 'track', Type\Track::class),
@@ -16,7 +16,7 @@ class ColissimoTrackingClassmap
         );
     }
 
-    public static function enums(): \Soap\Encoding\ClassMap\ClassMapCollection
+    public static function enums(): ClassMapCollection
     {
         return new ClassMapCollection;
     }

@@ -6,22 +6,22 @@ use Phpro\SoapClient\Type\RequestInterface;
 
 class GenerateToken implements RequestInterface
 {
-    private ?\SmartDato\ColissimoSdk\Type\GenerateTokenGenerateTokenRequest $generateTokenRequest = null;
+    private ?GenerateTokenGenerateTokenRequest $generateTokenRequest = null;
 
     /**
      * Constructor
      */
-    public function __construct(?\SmartDato\ColissimoSdk\Type\GenerateTokenGenerateTokenRequest $generateTokenRequest)
+    public function __construct(?GenerateTokenGenerateTokenRequest $generateTokenRequest)
     {
         $this->generateTokenRequest = $generateTokenRequest;
     }
 
-    public function getGenerateTokenRequest(): ?\SmartDato\ColissimoSdk\Type\GenerateTokenGenerateTokenRequest
+    public function getGenerateTokenRequest(): ?GenerateTokenGenerateTokenRequest
     {
         return $this->generateTokenRequest;
     }
 
-    public function withGenerateTokenRequest(?\SmartDato\ColissimoSdk\Type\GenerateTokenGenerateTokenRequest $generateTokenRequest): static
+    public function withGenerateTokenRequest(?GenerateTokenGenerateTokenRequest $generateTokenRequest): static
     {
         $new = clone $this;
         $new->generateTokenRequest = $generateTokenRequest;

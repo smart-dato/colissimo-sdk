@@ -9,7 +9,7 @@ class Bordereau
      */
     private mixed $bordereauDataHandler = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\BordereauHeader $bordereauHeader = null;
+    private ?BordereauHeader $bordereauHeader = null;
 
     /**
      * @return null | mixed
@@ -30,12 +30,12 @@ class Bordereau
         return $new;
     }
 
-    public function getBordereauHeader(): ?\SmartDato\ColissimoSdk\Type\BordereauHeader
+    public function getBordereauHeader(): ?BordereauHeader
     {
         return $this->bordereauHeader;
     }
 
-    public function withBordereauHeader(?\SmartDato\ColissimoSdk\Type\BordereauHeader $bordereauHeader): static
+    public function withBordereauHeader(?BordereauHeader $bordereauHeader): static
     {
         $new = clone $this;
         $new->bordereauHeader = $bordereauHeader;

@@ -8,12 +8,12 @@ class GetProductInterService implements RequestInterface
 {
     private ?string $arg0 = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\GetProductInterRequest $arg1 = null;
+    private ?GetProductInterRequest $arg1 = null;
 
     /**
      * Constructor
      */
-    public function __construct(?string $arg0, ?\SmartDato\ColissimoSdk\Type\GetProductInterRequest $arg1)
+    public function __construct(?string $arg0, ?GetProductInterRequest $arg1)
     {
         $this->arg0 = $arg0;
         $this->arg1 = $arg1;
@@ -32,12 +32,12 @@ class GetProductInterService implements RequestInterface
         return $new;
     }
 
-    public function getArg1(): ?\SmartDato\ColissimoSdk\Type\GetProductInterRequest
+    public function getArg1(): ?GetProductInterRequest
     {
         return $this->arg1;
     }
 
-    public function withArg1(?\SmartDato\ColissimoSdk\Type\GetProductInterRequest $arg1): static
+    public function withArg1(?GetProductInterRequest $arg1): static
     {
         $new = clone $this;
         $new->arg1 = $arg1;

@@ -6,22 +6,22 @@ use Phpro\SoapClient\Type\RequestInterface;
 
 class CheckGenerateLabel implements RequestInterface
 {
-    private ?\SmartDato\ColissimoSdk\Type\CheckGenerateLabelCheckGenerateLabelRequest $checkGenerateLabelRequest = null;
+    private ?CheckGenerateLabelCheckGenerateLabelRequest $checkGenerateLabelRequest = null;
 
     /**
      * Constructor
      */
-    public function __construct(?\SmartDato\ColissimoSdk\Type\CheckGenerateLabelCheckGenerateLabelRequest $checkGenerateLabelRequest)
+    public function __construct(?CheckGenerateLabelCheckGenerateLabelRequest $checkGenerateLabelRequest)
     {
         $this->checkGenerateLabelRequest = $checkGenerateLabelRequest;
     }
 
-    public function getCheckGenerateLabelRequest(): ?\SmartDato\ColissimoSdk\Type\CheckGenerateLabelCheckGenerateLabelRequest
+    public function getCheckGenerateLabelRequest(): ?CheckGenerateLabelCheckGenerateLabelRequest
     {
         return $this->checkGenerateLabelRequest;
     }
 
-    public function withCheckGenerateLabelRequest(?\SmartDato\ColissimoSdk\Type\CheckGenerateLabelCheckGenerateLabelRequest $checkGenerateLabelRequest): static
+    public function withCheckGenerateLabelRequest(?CheckGenerateLabelCheckGenerateLabelRequest $checkGenerateLabelRequest): static
     {
         $new = clone $this;
         $new->checkGenerateLabelRequest = $checkGenerateLabelRequest;

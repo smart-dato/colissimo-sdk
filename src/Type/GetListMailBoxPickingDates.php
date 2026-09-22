@@ -6,22 +6,22 @@ use Phpro\SoapClient\Type\RequestInterface;
 
 class GetListMailBoxPickingDates implements RequestInterface
 {
-    private ?\SmartDato\ColissimoSdk\Type\GetListMailBoxPickingDatesRetourRequest $getListMailBoxPickingDatesRetourRequest = null;
+    private ?GetListMailBoxPickingDatesRetourRequest $getListMailBoxPickingDatesRetourRequest = null;
 
     /**
      * Constructor
      */
-    public function __construct(?\SmartDato\ColissimoSdk\Type\GetListMailBoxPickingDatesRetourRequest $getListMailBoxPickingDatesRetourRequest)
+    public function __construct(?GetListMailBoxPickingDatesRetourRequest $getListMailBoxPickingDatesRetourRequest)
     {
         $this->getListMailBoxPickingDatesRetourRequest = $getListMailBoxPickingDatesRetourRequest;
     }
 
-    public function getGetListMailBoxPickingDatesRetourRequest(): ?\SmartDato\ColissimoSdk\Type\GetListMailBoxPickingDatesRetourRequest
+    public function getGetListMailBoxPickingDatesRetourRequest(): ?GetListMailBoxPickingDatesRetourRequest
     {
         return $this->getListMailBoxPickingDatesRetourRequest;
     }
 
-    public function withGetListMailBoxPickingDatesRetourRequest(?\SmartDato\ColissimoSdk\Type\GetListMailBoxPickingDatesRetourRequest $getListMailBoxPickingDatesRetourRequest): static
+    public function withGetListMailBoxPickingDatesRetourRequest(?GetListMailBoxPickingDatesRetourRequest $getListMailBoxPickingDatesRetourRequest): static
     {
         $new = clone $this;
         $new->getListMailBoxPickingDatesRetourRequest = $getListMailBoxPickingDatesRetourRequest;

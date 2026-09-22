@@ -8,7 +8,7 @@ class TypeLetterCustomsDeclarations
 
     private ?int $numberOfCopies = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\TypeLetterContents $contents = null;
+    private ?TypeLetterContents $contents = null;
 
     private ?string $importersReference = null;
 
@@ -26,7 +26,7 @@ class TypeLetterCustomsDeclarations
 
     private ?string $certificatNumber = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\TypeAdresse $importerAddress = null;
+    private ?TypeAdresse $importerAddress = null;
 
     public function getIncludeCustomsDeclarations(): ?bool
     {
@@ -54,12 +54,12 @@ class TypeLetterCustomsDeclarations
         return $new;
     }
 
-    public function getContents(): ?\SmartDato\ColissimoSdk\Type\TypeLetterContents
+    public function getContents(): ?TypeLetterContents
     {
         return $this->contents;
     }
 
-    public function withContents(?\SmartDato\ColissimoSdk\Type\TypeLetterContents $contents): static
+    public function withContents(?TypeLetterContents $contents): static
     {
         $new = clone $this;
         $new->contents = $contents;
@@ -171,12 +171,12 @@ class TypeLetterCustomsDeclarations
         return $new;
     }
 
-    public function getImporterAddress(): ?\SmartDato\ColissimoSdk\Type\TypeAdresse
+    public function getImporterAddress(): ?TypeAdresse
     {
         return $this->importerAddress;
     }
 
-    public function withImporterAddress(?\SmartDato\ColissimoSdk\Type\TypeAdresse $importerAddress): static
+    public function withImporterAddress(?TypeAdresse $importerAddress): static
     {
         $new = clone $this;
         $new->importerAddress = $importerAddress;

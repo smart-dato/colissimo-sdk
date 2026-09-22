@@ -9,7 +9,7 @@ class XmlResponse
      */
     private mixed $cn23 = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\XmlResponseAddressee $addressee = null;
+    private ?XmlResponseAddressee $addressee = null;
 
     private ?string $barCodeCityssimo = null;
 
@@ -17,14 +17,14 @@ class XmlResponse
 
     private ?string $barCodeRouting = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\BelgiumLabel $belgiumLabel = null;
+    private ?BelgiumLabel $belgiumLabel = null;
 
     private ?string $cabAztec = null;
 
     private ?string $contractNumber = null;
 
     /**
-     * @var null | array<int<0,max>, \SmartDato\ColissimoSdk\Type\ElementVisual>
+     * @var null | array<int<0,max>, ElementVisual>
      */
     private ?array $elementVisual = null;
 
@@ -36,17 +36,17 @@ class XmlResponse
 
     private ?string $parcelNumberPartner = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\PickupLocation $pickupLocation = null;
+    private ?PickupLocation $pickupLocation = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\Routing $routing = null;
+    private ?Routing $routing = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\XmlResponseSender $sender = null;
+    private ?XmlResponseSender $sender = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\Site $sitePCH = null;
+    private ?Site $sitePCH = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\SwissLabel $swissLabel = null;
+    private ?SwissLabel $swissLabel = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\ZoneRouting $zoneRouting = null;
+    private ?ZoneRouting $zoneRouting = null;
 
     /**
      * @return null | mixed
@@ -67,12 +67,12 @@ class XmlResponse
         return $new;
     }
 
-    public function getAddressee(): ?\SmartDato\ColissimoSdk\Type\XmlResponseAddressee
+    public function getAddressee(): ?XmlResponseAddressee
     {
         return $this->addressee;
     }
 
-    public function withAddressee(?\SmartDato\ColissimoSdk\Type\XmlResponseAddressee $addressee): static
+    public function withAddressee(?XmlResponseAddressee $addressee): static
     {
         $new = clone $this;
         $new->addressee = $addressee;
@@ -119,12 +119,12 @@ class XmlResponse
         return $new;
     }
 
-    public function getBelgiumLabel(): ?\SmartDato\ColissimoSdk\Type\BelgiumLabel
+    public function getBelgiumLabel(): ?BelgiumLabel
     {
         return $this->belgiumLabel;
     }
 
-    public function withBelgiumLabel(?\SmartDato\ColissimoSdk\Type\BelgiumLabel $belgiumLabel): static
+    public function withBelgiumLabel(?BelgiumLabel $belgiumLabel): static
     {
         $new = clone $this;
         $new->belgiumLabel = $belgiumLabel;
@@ -159,7 +159,7 @@ class XmlResponse
     }
 
     /**
-     * @return null | array<int<0,max>, \SmartDato\ColissimoSdk\Type\ElementVisual>
+     * @return null | array<int<0,max>, ElementVisual>
      */
     public function getElementVisual(): ?array
     {
@@ -167,7 +167,7 @@ class XmlResponse
     }
 
     /**
-     * @param  null | array<int<0,max>, \SmartDato\ColissimoSdk\Type\ElementVisual>  $elementVisual
+     * @param  null | array<int<0,max>, ElementVisual>  $elementVisual
      */
     public function withElementVisual(?array $elementVisual): static
     {
@@ -229,12 +229,12 @@ class XmlResponse
         return $new;
     }
 
-    public function getPickupLocation(): ?\SmartDato\ColissimoSdk\Type\PickupLocation
+    public function getPickupLocation(): ?PickupLocation
     {
         return $this->pickupLocation;
     }
 
-    public function withPickupLocation(?\SmartDato\ColissimoSdk\Type\PickupLocation $pickupLocation): static
+    public function withPickupLocation(?PickupLocation $pickupLocation): static
     {
         $new = clone $this;
         $new->pickupLocation = $pickupLocation;
@@ -242,12 +242,12 @@ class XmlResponse
         return $new;
     }
 
-    public function getRouting(): ?\SmartDato\ColissimoSdk\Type\Routing
+    public function getRouting(): ?Routing
     {
         return $this->routing;
     }
 
-    public function withRouting(?\SmartDato\ColissimoSdk\Type\Routing $routing): static
+    public function withRouting(?Routing $routing): static
     {
         $new = clone $this;
         $new->routing = $routing;
@@ -255,12 +255,12 @@ class XmlResponse
         return $new;
     }
 
-    public function getSender(): ?\SmartDato\ColissimoSdk\Type\XmlResponseSender
+    public function getSender(): ?XmlResponseSender
     {
         return $this->sender;
     }
 
-    public function withSender(?\SmartDato\ColissimoSdk\Type\XmlResponseSender $sender): static
+    public function withSender(?XmlResponseSender $sender): static
     {
         $new = clone $this;
         $new->sender = $sender;
@@ -268,12 +268,12 @@ class XmlResponse
         return $new;
     }
 
-    public function getSitePCH(): ?\SmartDato\ColissimoSdk\Type\Site
+    public function getSitePCH(): ?Site
     {
         return $this->sitePCH;
     }
 
-    public function withSitePCH(?\SmartDato\ColissimoSdk\Type\Site $sitePCH): static
+    public function withSitePCH(?Site $sitePCH): static
     {
         $new = clone $this;
         $new->sitePCH = $sitePCH;
@@ -281,12 +281,12 @@ class XmlResponse
         return $new;
     }
 
-    public function getSwissLabel(): ?\SmartDato\ColissimoSdk\Type\SwissLabel
+    public function getSwissLabel(): ?SwissLabel
     {
         return $this->swissLabel;
     }
 
-    public function withSwissLabel(?\SmartDato\ColissimoSdk\Type\SwissLabel $swissLabel): static
+    public function withSwissLabel(?SwissLabel $swissLabel): static
     {
         $new = clone $this;
         $new->swissLabel = $swissLabel;
@@ -294,12 +294,12 @@ class XmlResponse
         return $new;
     }
 
-    public function getZoneRouting(): ?\SmartDato\ColissimoSdk\Type\ZoneRouting
+    public function getZoneRouting(): ?ZoneRouting
     {
         return $this->zoneRouting;
     }
 
-    public function withZoneRouting(?\SmartDato\ColissimoSdk\Type\ZoneRouting $zoneRouting): static
+    public function withZoneRouting(?ZoneRouting $zoneRouting): static
     {
         $new = clone $this;
         $new->zoneRouting = $zoneRouting;

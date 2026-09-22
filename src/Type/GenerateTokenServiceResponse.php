@@ -6,14 +6,14 @@ use Phpro\SoapClient\Type\ResultInterface;
 
 class GenerateTokenServiceResponse implements ResultInterface
 {
-    private ?\SmartDato\ColissimoSdk\Type\GenerateTokenV2ResponseType $return = null;
+    private ?GenerateTokenV2ResponseType $return = null;
 
-    public function getReturn(): ?\SmartDato\ColissimoSdk\Type\GenerateTokenV2ResponseType
+    public function getReturn(): ?GenerateTokenV2ResponseType
     {
         return $this->return;
     }
 
-    public function withReturn(?\SmartDato\ColissimoSdk\Type\GenerateTokenV2ResponseType $return): static
+    public function withReturn(?GenerateTokenV2ResponseType $return): static
     {
         $new = clone $this;
         $new->return = $return;

@@ -6,14 +6,14 @@ use Phpro\SoapClient\Type\ResultInterface;
 
 class GenerateCN23ServiceResponse implements ResultInterface
 {
-    private ?\SmartDato\ColissimoSdk\Type\GenerateCN23V2ResponseType $return = null;
+    private ?GenerateCN23V2ResponseType $return = null;
 
-    public function getReturn(): ?\SmartDato\ColissimoSdk\Type\GenerateCN23V2ResponseType
+    public function getReturn(): ?GenerateCN23V2ResponseType
     {
         return $this->return;
     }
 
-    public function withReturn(?\SmartDato\ColissimoSdk\Type\GenerateCN23V2ResponseType $return): static
+    public function withReturn(?GenerateCN23V2ResponseType $return): static
     {
         $new = clone $this;
         $new->return = $return;

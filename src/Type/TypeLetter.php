@@ -4,26 +4,26 @@ namespace SmartDato\ColissimoSdk\Type;
 
 class TypeLetter
 {
-    private \SmartDato\ColissimoSdk\Type\TypeLetterService $service;
+    private TypeLetterService $service;
 
-    private \SmartDato\ColissimoSdk\Type\TypeLetterParcel $parcel;
+    private TypeLetterParcel $parcel;
 
-    private ?\SmartDato\ColissimoSdk\Type\TypeLetterCustomsDeclarations $customsDeclarations = null;
+    private ?TypeLetterCustomsDeclarations $customsDeclarations = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\TypeLetterSender $sender = null;
+    private ?TypeLetterSender $sender = null;
 
-    private \SmartDato\ColissimoSdk\Type\TypeLetterAddressee $addressee;
+    private TypeLetterAddressee $addressee;
 
-    private ?\SmartDato\ColissimoSdk\Type\TypeAdresse $codSenderAddress = null;
+    private ?TypeAdresse $codSenderAddress = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\TypeLetterUploadDocument $uploadDocument = null;
+    private ?TypeLetterUploadDocument $uploadDocument = null;
 
-    public function getService(): \SmartDato\ColissimoSdk\Type\TypeLetterService
+    public function getService(): TypeLetterService
     {
         return $this->service;
     }
 
-    public function withService(\SmartDato\ColissimoSdk\Type\TypeLetterService $service): static
+    public function withService(TypeLetterService $service): static
     {
         $new = clone $this;
         $new->service = $service;
@@ -31,12 +31,12 @@ class TypeLetter
         return $new;
     }
 
-    public function getParcel(): \SmartDato\ColissimoSdk\Type\TypeLetterParcel
+    public function getParcel(): TypeLetterParcel
     {
         return $this->parcel;
     }
 
-    public function withParcel(\SmartDato\ColissimoSdk\Type\TypeLetterParcel $parcel): static
+    public function withParcel(TypeLetterParcel $parcel): static
     {
         $new = clone $this;
         $new->parcel = $parcel;
@@ -44,12 +44,12 @@ class TypeLetter
         return $new;
     }
 
-    public function getCustomsDeclarations(): ?\SmartDato\ColissimoSdk\Type\TypeLetterCustomsDeclarations
+    public function getCustomsDeclarations(): ?TypeLetterCustomsDeclarations
     {
         return $this->customsDeclarations;
     }
 
-    public function withCustomsDeclarations(?\SmartDato\ColissimoSdk\Type\TypeLetterCustomsDeclarations $customsDeclarations): static
+    public function withCustomsDeclarations(?TypeLetterCustomsDeclarations $customsDeclarations): static
     {
         $new = clone $this;
         $new->customsDeclarations = $customsDeclarations;
@@ -57,12 +57,12 @@ class TypeLetter
         return $new;
     }
 
-    public function getSender(): ?\SmartDato\ColissimoSdk\Type\TypeLetterSender
+    public function getSender(): ?TypeLetterSender
     {
         return $this->sender;
     }
 
-    public function withSender(?\SmartDato\ColissimoSdk\Type\TypeLetterSender $sender): static
+    public function withSender(?TypeLetterSender $sender): static
     {
         $new = clone $this;
         $new->sender = $sender;
@@ -70,12 +70,12 @@ class TypeLetter
         return $new;
     }
 
-    public function getAddressee(): \SmartDato\ColissimoSdk\Type\TypeLetterAddressee
+    public function getAddressee(): TypeLetterAddressee
     {
         return $this->addressee;
     }
 
-    public function withAddressee(\SmartDato\ColissimoSdk\Type\TypeLetterAddressee $addressee): static
+    public function withAddressee(TypeLetterAddressee $addressee): static
     {
         $new = clone $this;
         $new->addressee = $addressee;
@@ -83,12 +83,12 @@ class TypeLetter
         return $new;
     }
 
-    public function getCodSenderAddress(): ?\SmartDato\ColissimoSdk\Type\TypeAdresse
+    public function getCodSenderAddress(): ?TypeAdresse
     {
         return $this->codSenderAddress;
     }
 
-    public function withCodSenderAddress(?\SmartDato\ColissimoSdk\Type\TypeAdresse $codSenderAddress): static
+    public function withCodSenderAddress(?TypeAdresse $codSenderAddress): static
     {
         $new = clone $this;
         $new->codSenderAddress = $codSenderAddress;
@@ -96,12 +96,12 @@ class TypeLetter
         return $new;
     }
 
-    public function getUploadDocument(): ?\SmartDato\ColissimoSdk\Type\TypeLetterUploadDocument
+    public function getUploadDocument(): ?TypeLetterUploadDocument
     {
         return $this->uploadDocument;
     }
 
-    public function withUploadDocument(?\SmartDato\ColissimoSdk\Type\TypeLetterUploadDocument $uploadDocument): static
+    public function withUploadDocument(?TypeLetterUploadDocument $uploadDocument): static
     {
         $new = clone $this;
         $new->uploadDocument = $uploadDocument;

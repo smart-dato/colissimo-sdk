@@ -12,7 +12,7 @@ class TypeLetterAddressee
 
     private ?string $promotionCode = null;
 
-    private \SmartDato\ColissimoSdk\Type\TypeAdresse $address;
+    private TypeAdresse $address;
 
     public function getAddresseeParcelRef(): ?string
     {
@@ -66,12 +66,12 @@ class TypeLetterAddressee
         return $new;
     }
 
-    public function getAddress(): \SmartDato\ColissimoSdk\Type\TypeAdresse
+    public function getAddress(): TypeAdresse
     {
         return $this->address;
     }
 
-    public function withAddress(\SmartDato\ColissimoSdk\Type\TypeAdresse $address): static
+    public function withAddress(TypeAdresse $address): static
     {
         $new = clone $this;
         $new->address = $address;
