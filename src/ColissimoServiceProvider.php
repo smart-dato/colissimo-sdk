@@ -4,6 +4,7 @@ namespace SmartDato\ColissimoSdk;
 
 use Http\Client\Common\PluginClient;
 use Http\Discovery\Psr18ClientDiscovery;
+use Illuminate\Contracts\Foundation\Application;
 use Phpro\SoapClient\Caller\EngineCaller;
 use Phpro\SoapClient\Caller\EventDispatchingCaller;
 use Phpro\SoapClient\Soap\DefaultEngineFactory;
@@ -43,7 +44,7 @@ class ColissimoServiceProvider extends PackageServiceProvider
         );
         $this->app->singleton(
             ColissimoShipmentClient::class,
-            function (\Illuminate\Contracts\Foundation\Application $app, array $parameters): ColissimoShipmentClient {
+            function (Application $app, array $parameters): ColissimoShipmentClient {
                 $config = $app['config']['collisimo-sdk'];
                 $engineOptions = EngineOptions::defaults($config['wsdl']['shipment'])
                     ->withEncoderRegistry(
@@ -83,7 +84,7 @@ class ColissimoServiceProvider extends PackageServiceProvider
 
         $this->app->singleton(
             ColissimoTrackingClient::class,
-            function (\Illuminate\Contracts\Foundation\Application $app, array $parameters): ColissimoTrackingClient {
+            function (Application $app, array $parameters): ColissimoTrackingClient {
                 $config = $app['config']['collisimo-sdk'];
                 $engineOptions = EngineOptions::defaults($config['wsdl']['tracking'])
                     ->withEncoderRegistry(

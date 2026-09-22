@@ -6,14 +6,14 @@ use Phpro\SoapClient\Type\ResultInterface;
 
 class PlanPickupResponse implements ResultInterface
 {
-    private ?\SmartDato\ColissimoSdk\Type\PlanPickupResponseType $return = null;
+    private ?PlanPickupResponseType $return = null;
 
-    public function getReturn(): ?\SmartDato\ColissimoSdk\Type\PlanPickupResponseType
+    public function getReturn(): ?PlanPickupResponseType
     {
         return $this->return;
     }
 
-    public function withReturn(?\SmartDato\ColissimoSdk\Type\PlanPickupResponseType $return): static
+    public function withReturn(?PlanPickupResponseType $return): static
     {
         $new = clone $this;
         $new->return = $return;

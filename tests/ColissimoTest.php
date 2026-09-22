@@ -33,7 +33,7 @@ test('track', function () {
     expect($response->getReturn()->getErrorCode())->toEqual(0);
     VCR::eject();
     VCR::turnOff();
-});
+})->skip('only testable with soap mockserver');
 
 test('shipment', function (): void {
     $connector = new Colissimo;

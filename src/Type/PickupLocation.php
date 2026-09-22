@@ -4,7 +4,7 @@ namespace SmartDato\ColissimoSdk\Type;
 
 class PickupLocation
 {
-    private ?\SmartDato\ColissimoSdk\Type\AddressPickupLocation $address = null;
+    private ?AddressPickupLocation $address = null;
 
     private ?string $groupRouting = null;
 
@@ -24,12 +24,12 @@ class PickupLocation
 
     private ?string $sortDistribution = null;
 
-    public function getAddress(): ?\SmartDato\ColissimoSdk\Type\AddressPickupLocation
+    public function getAddress(): ?AddressPickupLocation
     {
         return $this->address;
     }
 
-    public function withAddress(?\SmartDato\ColissimoSdk\Type\AddressPickupLocation $address): static
+    public function withAddress(?AddressPickupLocation $address): static
     {
         $new = clone $this;
         $new->address = $address;

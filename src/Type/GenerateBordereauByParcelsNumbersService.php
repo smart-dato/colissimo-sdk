@@ -12,14 +12,14 @@ class GenerateBordereauByParcelsNumbersService implements RequestInterface
 
     private ?string $arg2 = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\GenerateBordereauByParcelsNumbersServiceArg3 $arg3 = null;
+    private ?GenerateBordereauByParcelsNumbersServiceArg3 $arg3 = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\TypeFields $arg4 = null;
+    private ?TypeFields $arg4 = null;
 
     /**
      * Constructor
      */
-    public function __construct(?string $arg0, ?string $arg1, ?string $arg2, ?\SmartDato\ColissimoSdk\Type\GenerateBordereauByParcelsNumbersServiceArg3 $arg3, ?\SmartDato\ColissimoSdk\Type\TypeFields $arg4)
+    public function __construct(?string $arg0, ?string $arg1, ?string $arg2, ?GenerateBordereauByParcelsNumbersServiceArg3 $arg3, ?TypeFields $arg4)
     {
         $this->arg0 = $arg0;
         $this->arg1 = $arg1;
@@ -67,12 +67,12 @@ class GenerateBordereauByParcelsNumbersService implements RequestInterface
         return $new;
     }
 
-    public function getArg3(): ?\SmartDato\ColissimoSdk\Type\GenerateBordereauByParcelsNumbersServiceArg3
+    public function getArg3(): ?GenerateBordereauByParcelsNumbersServiceArg3
     {
         return $this->arg3;
     }
 
-    public function withArg3(?\SmartDato\ColissimoSdk\Type\GenerateBordereauByParcelsNumbersServiceArg3 $arg3): static
+    public function withArg3(?GenerateBordereauByParcelsNumbersServiceArg3 $arg3): static
     {
         $new = clone $this;
         $new->arg3 = $arg3;
@@ -80,12 +80,12 @@ class GenerateBordereauByParcelsNumbersService implements RequestInterface
         return $new;
     }
 
-    public function getArg4(): ?\SmartDato\ColissimoSdk\Type\TypeFields
+    public function getArg4(): ?TypeFields
     {
         return $this->arg4;
     }
 
-    public function withArg4(?\SmartDato\ColissimoSdk\Type\TypeFields $arg4): static
+    public function withArg4(?TypeFields $arg4): static
     {
         $new = clone $this;
         $new->arg4 = $arg4;

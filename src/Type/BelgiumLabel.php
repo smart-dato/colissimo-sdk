@@ -6,11 +6,11 @@ class BelgiumLabel
 {
     private ?string $codeBarre = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\CodeVAS $codeVAS = null;
+    private ?CodeVAS $codeVAS = null;
 
     private ?string $identification = null;
 
-    private ?\SmartDato\ColissimoSdk\Type\ReturnAddressBelgium $returnAddress = null;
+    private ?ReturnAddressBelgium $returnAddress = null;
 
     public function getCodeBarre(): ?string
     {
@@ -25,12 +25,12 @@ class BelgiumLabel
         return $new;
     }
 
-    public function getCodeVAS(): ?\SmartDato\ColissimoSdk\Type\CodeVAS
+    public function getCodeVAS(): ?CodeVAS
     {
         return $this->codeVAS;
     }
 
-    public function withCodeVAS(?\SmartDato\ColissimoSdk\Type\CodeVAS $codeVAS): static
+    public function withCodeVAS(?CodeVAS $codeVAS): static
     {
         $new = clone $this;
         $new->codeVAS = $codeVAS;
@@ -51,12 +51,12 @@ class BelgiumLabel
         return $new;
     }
 
-    public function getReturnAddress(): ?\SmartDato\ColissimoSdk\Type\ReturnAddressBelgium
+    public function getReturnAddress(): ?ReturnAddressBelgium
     {
         return $this->returnAddress;
     }
 
-    public function withReturnAddress(?\SmartDato\ColissimoSdk\Type\ReturnAddressBelgium $returnAddress): static
+    public function withReturnAddress(?ReturnAddressBelgium $returnAddress): static
     {
         $new = clone $this;
         $new->returnAddress = $returnAddress;

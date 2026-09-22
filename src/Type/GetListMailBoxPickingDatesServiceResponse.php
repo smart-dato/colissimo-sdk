@@ -6,14 +6,14 @@ use Phpro\SoapClient\Type\ResultInterface;
 
 class GetListMailBoxPickingDatesServiceResponse implements ResultInterface
 {
-    private ?\SmartDato\ColissimoSdk\Type\GetListMailBoxPickingDatesResponseType $return = null;
+    private ?GetListMailBoxPickingDatesResponseType $return = null;
 
-    public function getReturn(): ?\SmartDato\ColissimoSdk\Type\GetListMailBoxPickingDatesResponseType
+    public function getReturn(): ?GetListMailBoxPickingDatesResponseType
     {
         return $this->return;
     }
 
-    public function withReturn(?\SmartDato\ColissimoSdk\Type\GetListMailBoxPickingDatesResponseType $return): static
+    public function withReturn(?GetListMailBoxPickingDatesResponseType $return): static
     {
         $new = clone $this;
         $new->return = $return;

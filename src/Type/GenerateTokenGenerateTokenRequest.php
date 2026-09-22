@@ -8,11 +8,11 @@ class GenerateTokenGenerateTokenRequest
 
     private ?string $password = null;
 
-    private \SmartDato\ColissimoSdk\Type\TypeOutputFormat $outputFormat;
+    private TypeOutputFormat $outputFormat;
 
-    private \SmartDato\ColissimoSdk\Type\TypeLetter $letter;
+    private TypeLetter $letter;
 
-    private ?\SmartDato\ColissimoSdk\Type\TypeFields $fields = null;
+    private ?TypeFields $fields = null;
 
     public function getContractNumber(): ?string
     {
@@ -40,12 +40,12 @@ class GenerateTokenGenerateTokenRequest
         return $new;
     }
 
-    public function getOutputFormat(): \SmartDato\ColissimoSdk\Type\TypeOutputFormat
+    public function getOutputFormat(): TypeOutputFormat
     {
         return $this->outputFormat;
     }
 
-    public function withOutputFormat(\SmartDato\ColissimoSdk\Type\TypeOutputFormat $outputFormat): static
+    public function withOutputFormat(TypeOutputFormat $outputFormat): static
     {
         $new = clone $this;
         $new->outputFormat = $outputFormat;
@@ -53,12 +53,12 @@ class GenerateTokenGenerateTokenRequest
         return $new;
     }
 
-    public function getLetter(): \SmartDato\ColissimoSdk\Type\TypeLetter
+    public function getLetter(): TypeLetter
     {
         return $this->letter;
     }
 
-    public function withLetter(\SmartDato\ColissimoSdk\Type\TypeLetter $letter): static
+    public function withLetter(TypeLetter $letter): static
     {
         $new = clone $this;
         $new->letter = $letter;
@@ -66,12 +66,12 @@ class GenerateTokenGenerateTokenRequest
         return $new;
     }
 
-    public function getFields(): ?\SmartDato\ColissimoSdk\Type\TypeFields
+    public function getFields(): ?TypeFields
     {
         return $this->fields;
     }
 
-    public function withFields(?\SmartDato\ColissimoSdk\Type\TypeFields $fields): static
+    public function withFields(?TypeFields $fields): static
     {
         $new = clone $this;
         $new->fields = $fields;
