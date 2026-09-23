@@ -1,6 +1,6 @@
 {
     "name": "smart-dato/colissimo-sdk",
-    "description": "This is my package colissimo-sdk",
+    "description": "Colissimo SOAP shipping SDK for Laravel: labels and tracking",
     "keywords": [
         "SmartDato",
         "laravel",
