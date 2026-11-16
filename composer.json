@@ -25,7 +25,7 @@
         "phpro/soap-client": "^4.8.0",
         "psr/http-factory-implementation": "*",
         "spatie/laravel-package-tools": "^1.16",
-        "symfony/cache": "^7.4.3"
+        "symfony/cache": "^7.4.3||^8.0"
     },
     "require-dev": {
         "larastan/larastan": "^3.0",
@@ -74,7 +74,7 @@
                 "SmartDato\\ColissimoSdk\\ColissimoServiceProvider"
             ],
             "aliases": {
-                "Colissimo": "SmartDato\\Colissimo\\Facades\\Colissimo"
+                "Colissimo": "SmartDato\\ColissimoSdk\\Facades\\Colissimo"
             }
         }
     },
