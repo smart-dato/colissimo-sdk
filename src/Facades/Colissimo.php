@@ -5,7 +5,7 @@ namespace SmartDato\ColissimoSdk\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \SmartDato\Colissimo\Colissimo
+ * @see \SmartDato\ColissimoSdk\Colissimo
  */
 class Colissimo extends Facade
 {
